@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+/* .container svg{
+    font-size: 40px;
+    color: var(--dark-purple);
+} */
+
+.container svg {
+    font-size: 40px;
+    transition: .2s;
+    color: var(--dark-purple);
+}
+
+.container svg:hover {
+    transition: .2s;
+    transform: translateY(-10px);
+    color: var(--light-purple);
+}

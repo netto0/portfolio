@@ -1,0 +1,33 @@
+:root {
+    --background-gradient: linear-gradient(180deg, #FFC72C 0%, #FF8A00 50%, #651F71 100%);
+    --light-purple:#7037CD;
+    --dark-purple:#651F71;
+}
+@font-face {
+    font-family: Inter;
+    src: url(assets/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family: InterBlack;
+    src: url(assets/Inter-Black.ttf);
+}
+
+
+* {
+    font-family: Inter;
+}
+
+html {
+    height: 100vh;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    margin: none;
+}
+
+head {
+    height: 100vh;
+}
