@@ -10,23 +10,66 @@ export default function Presentation() {
 
   return (
     <div className={styles.presentation}>
-      <p className={`${styles.occupation} ${lightMode ? styles.light : styles.dark}`}>DESENVOLVEDOR FRONT-END</p>
-      <p className={`${styles.salutation} ${lightMode ? styles.light : styles.dark}`}>Oi, me chamo Netto</p>
+      <p
+        className={`${styles.occupation} ${
+          lightMode ? styles.light : styles.dark
+        }`}
+      >
+        DESENVOLVEDOR FRONT-END
+      </p>
+      <p
+        className={`${styles.salutation} ${
+          lightMode ? styles.light : styles.dark
+        }`}
+      >
+        Oi, me chamo Netto
+      </p>
       <div className={styles.iconLinks}>
-        <span className={`${styles.iconLink} ${lightMode ? styles.light : styles.dark}`}>
+        <a
+          href="https://github.com/netto0"
+          onclick="window.open('https://google.com/', '_blank'); return false;"
+          target="_blank"
+          className={`${styles.iconLink} ${
+            lightMode ? styles.light : styles.dark
+          }`}
+        >
           <BsGithub />
-        </span>
-        <span className={`${styles.iconLink} ${lightMode ? styles.light : styles.dark}`} style={{ marginLeft: "10px" }}>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/orlandi-netto/"
+          target="_blank"
+          className={`${styles.iconLink} ${
+            lightMode ? styles.light : styles.dark
+          }`}
+          style={{ marginLeft: "10px" }}
+        >
           <BsLinkedin />
-        </span>
-        <span className={`${styles.iconLink} ${lightMode ? styles.light : styles.dark}`} style={{ fontSize: 65 }}>
+        </a>
+        <a
+          href="src\assets\resume\curriculumVitae2023.pdf"
+          download={"curriculumVitae2023.pdf"}
+          className={`${styles.iconLink} ${
+            lightMode ? styles.light : styles.dark
+          }`}
+          style={{ fontSize: 65 }}
+        >
           <HiDocumentText />
-        </span>
-        <span className={`${styles.iconLink} ${lightMode ? styles.light : styles.dark}`} style={{ fontSize: 60 }}>
+        </a>
+        <a
+          href="/"
+          className={`${styles.iconLink} ${
+            lightMode ? styles.light : styles.dark
+          }`}
+          style={{ fontSize: 60 }}
+        >
           <FaLaptopCode />
-        </span>
+        </a>
       </div>
-      <p className={`${styles.summary} ${lightMode ? styles.light : styles.dark}`}>
+      <p
+        className={`${styles.summary} ${
+          lightMode ? styles.light : styles.dark
+        }`}
+      >
         Tenho 23 anos e estou estudando desenvolvimento front-end com foco em
         React há 1 ano.
       </p>
