@@ -1,43 +1,43 @@
 svg {
-  transition: 0.2s;
+    transition: .2s;
 }
 
 svg:hover {
-  cursor: pointer;
-  transition: 0.2s;
-  transform: translateY(-10px);
+    cursor: pointer;
+    transition: .2s;
+    transform: translateY(-10px);
 }
 
 :root {
-  --background-light-gradient: linear-gradient(
-    180deg,
-    #ffc72c 0%,
-    #ff8a00 50%,
-    #651f71 100%
-  );
-  --background-dark-gradient: linear-gradient(
-    180deg,
-    #000a21 0%,
-    #35049c 50%,
-    #82005d 100%
-  );
-  --light-primary-color: #651f71;
-  --light-secondary-color: #7037cd;
-  --dark-primary-color: #00F0FF;
-  --dark-secondary-color: #004FE9;
-}
-@font-face {
-  font-family: Inter;
-  src: url(assets/Inter-Regular.ttf);
-}
+    --background-light-gradient: linear-gradient(
+        180deg,
+        #ffc72c 0%,
+        #ff8a00 50%,
+        #651f71 100%
+        );
+        --background-dark-gradient: linear-gradient(
+            180deg,
+            #000a21 0%,
+            #35049c 50%,
+            #82005d 100%
+            );
+            --light-primary-color: #651f71;
+            --light-secondary-color: #7037cd;
+            --dark-primary-color: #00F0FF;
+            --dark-secondary-color: #004FE9;
+        }
+        @font-face {
+            font-family: Inter;
+            src: url(assets/Inter-Regular.ttf);
+        }
 
 @font-face {
-  font-family: InterBlack;
-  src: url(assets/Inter-Black.ttf);
+    font-family: InterBlack;
+    src: url(assets/Inter-Black.ttf);
 }
 
 * {
-  font-family: Inter;
+    font-family: Inter;
 }
 
 html {
