@@ -5,19 +5,14 @@
     padding: 1em;
 }
 
-/* .container svg{
-    font-size: 40px;
-    color: var(--dark-purple);
-} */
+.container.light {
+    color: var(--light-primary-color);
+}
+
+.container.dark {
+    color: var(--dark-primary-color);
+}
 
 .container svg {
     font-size: 40px;
-    transition: .2s;
-    color: var(--dark-purple);
-}
-
-.container svg:hover {
-    transition: .2s;
-    transform: translateY(-10px);
-    color: var(--light-purple);
 }
