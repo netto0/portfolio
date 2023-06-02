@@ -17,23 +17,23 @@ svg:hover {
         );
         --background-dark-gradient: linear-gradient(
             180deg,
-            #000a21 0%,
+            #020B57 0%,
             #35049c 50%,
-            #82005d 100%
+            #10022E 100%
             );
             --light-primary-color: #651f71;
             --light-secondary-color: #7037cd;
-            --dark-primary-color: #00F0FF;
-            --dark-secondary-color: #004FE9;
+            --dark-primary-color: #AD15B0;
+            --dark-secondary-color: #6914AC;
         }
         @font-face {
             font-family: Inter;
-            src: url(assets/Inter-Regular.ttf);
+            src: url(assets/fonts/Inter-Regular.ttf);
         }
 
 @font-face {
     font-family: InterBlack;
-    src: url(assets/Inter-Black.ttf);
+    src: url(assets/fonts/Inter-Black.ttf);
 }
 
 * {
@@ -43,6 +43,7 @@ svg:hover {
 html {
   height: 100vh;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 body {

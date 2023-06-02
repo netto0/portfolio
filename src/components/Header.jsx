@@ -9,13 +9,13 @@ export default function Header() {
     React.useContext(GlobalStyleContext);
 
   return (
-    <div className={`${styles.container} ${lightMode ? styles.light : styles.dark}`}>
+    <header className={`${styles.container} ${lightMode ? styles.light : styles.dark}`}>
       <div className="colorModeSwitch" onClick={() => setLightMode(!lightMode)}>
         {lightMode ? <BsLightbulbFill /> : <BsLightbulbOffFill />}
       </div>
       <div>
         <MdLanguage />
       </div>
-    </div>
+    </header>
   );
 }

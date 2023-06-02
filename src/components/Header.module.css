@@ -1,8 +1,9 @@
 .container {
+    box-sizing: border-box;
     display: flex;
     width: 100%;
     justify-content: space-between;
-    padding: 1em;
+    /* border: 2px solid black; */
 }
 
 .container.light {
@@ -15,4 +16,13 @@
 
 .container svg {
     font-size: 40px;
+    margin: .5em;
+}
+
+.container.light svg:hover {
+    color: var(--light-secondary-color);
+}
+
+.container.dark svg:hover {
+    color: var(--dark-secondary-color);
 }
