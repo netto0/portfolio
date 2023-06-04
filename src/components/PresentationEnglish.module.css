@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+}
+
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  border: var(--dev-border);
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.presentationPT {
+  border: var(--dev-border);
+  display: grid;
+  grid-template-rows: 1fr 1fr auto;
+  grid-template-columns: 320px auto auto;
+  grid-template-areas:
+    "occupation1 occupation1 occupation1"
+    "links occupation2 occupation2"
+    "summary summary summary";
+}
+
+.presentationEN {
+  border: var(--dev-border);
+  display: grid;
+  grid-template-rows: 1fr 1fr auto;
+  grid-template-columns: auto auto auto;
+  grid-template-areas:
+    "occupation1 occupation1 links"
+    "occupation2 occupation2 occupation2"
+    "summary summary summary";
+}
+
+.occupationText {
+  font-family: InterBlack;
+  line-height: 120px;
+  font-size: 128px;
+}
+
+.occupationText.right {
+  text-align: right;
+}
+
+.occupationPt1 {
+  border: var(--dev-border);
+  width: 100%;
+  grid-area: occupation1;
+}
+
+.occupationPt2 {
+  border: var(--dev-border);
+  width: 100%;
+  justify-self: right;
+  grid-area: occupation2;
+}
+
+.salutationLinks {
+  border: var(--dev-border);
+  grid-area: links;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.salutation {
+  font-size: 32px;
+  font-weight: 700;
+  top: 130px;
+  left: 5px;
+}
+
+.summary {
+  border: var(--dev-border);
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  grid-area: summary;
+}
+
+.summaryText {
+  width: 770px;
+  justify-self: right;
+  font-size: 32px;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.iconLinks {
+  top: 180px;
+  left: 30px;
+  width: fit-content;
+  display: flex;
+  gap: 0.8em;
+  align-items: center;
+}
+
+.iconLink {
+  font-size: 55px;
+}
+
+.occupation.light,
+.occupationText.light,
+.iconLink.light {
+  color: var(--light-primary-color);
+}
+
+.iconLink.light:hover,
+.summary.light,
+.salutation.light {
+  color: var(--light-secondary-color);
+}
+
+.iconLink.dark,
+.occupationText.dark,
+.occupation.dark {
+  color: var(--dark-primary-color);
+}
+
+.summary.dark,
+.salutation.dark,
+.iconLink.dark:hover {
+  color: var(--dark-secondary-color);
+}

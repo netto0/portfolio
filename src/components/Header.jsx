@@ -13,7 +13,7 @@ export default function Header() {
       <div className="colorModeSwitch" onClick={() => setLightMode(!lightMode)}>
         {lightMode ? <BsLightbulbFill /> : <BsLightbulbOffFill />}
       </div>
-      <div>
+      <div onClick={() => {language === "pt-Br" ? setLanguage("en") : setLanguage("pt-Br")}}>
         <MdLanguage />
       </div>
     </header>
