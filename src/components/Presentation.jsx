@@ -1,8 +1,7 @@
 import React from "react";
 import styles from "./Presentation.module.css";
 import { BsLinkedin, BsGithub } from "react-icons/bs";
-import { FaLaptopCode } from "react-icons/fa";
-import { HiDocumentText } from "react-icons/hi";
+import { FaLaptopCode, FaFileDownload } from "react-icons/fa";
 import { GlobalStyleContext } from "../providers/globalStyle";
 
 export default function Presentation({ executeScroll }) {
@@ -14,29 +13,48 @@ export default function Presentation({ executeScroll }) {
 
   return (
     <div className={styles.container}>
-      <div className={styles.presentation}>
-        <p
-          className={`${styles.occupation} ${styles.pt1} ${
+      <div
+        className={`${
+          language === "en" ? styles.presentationEN : styles.presentationPT
+        }`}
+      >
+        <div
+          className={`${styles.occupationPt1} ${
             lightMode ? styles.light : styles.dark
           }`}
-          >
-          DESENVOLVEDOR
-        </p>
-        <p
-          className={`${styles.occupation} ${styles.pt2} ${
-            lightMode ? styles.light : styles.dark
-          }`}
-          >
-          FRONT-END
-        </p>
-        <div className={styles.salutationLinks}>
+        >
           <p
-            className={`${styles.salutation} ${
+            className={`${styles.occupationText} ${
               lightMode ? styles.light : styles.dark
             }`}
-            >
-            Oi, me chamo Netto
+          >
+            {language === "en" ? "FRONT-END" : "PROGRAMADOR"}
           </p>
+        </div>
+        <div
+          className={`${styles.occupationPt2} ${
+            lightMode ? styles.light : styles.dark
+          }`}
+        >
+          <p
+            className={`${styles.occupationText} ${styles.right} ${
+              lightMode ? styles.light : styles.dark
+            }`}
+          >
+            {language === "en" ? "DEVELOPER" : "FRONT-END"}
+          </p>
+        </div>
+          <div className={styles.myName}>
+            <p
+              className={`${styles.salutation} ${
+                lightMode ? styles.light : styles.dark
+              }`}
+            >
+              {language === "en"
+                ? "Hi, my name is Netto"
+                : "Oi, me chamo Netto"}
+            </p>
+          </div>
           <div className={styles.iconLinks}>
             <a
               href="https://github.com/netto0"
@@ -45,7 +63,7 @@ export default function Presentation({ executeScroll }) {
               className={`${styles.iconLink} ${
                 lightMode ? styles.light : styles.dark
               }`}
-              >
+            >
               <BsGithub />
             </a>
             <a
@@ -56,41 +74,40 @@ export default function Presentation({ executeScroll }) {
                 lightMode ? styles.light : styles.dark
               }`}
               style={{ marginLeft: "10px" }}
-              >
+            >
               <BsLinkedin />
             </a>
             <a
               href="src\assets\resume\curriculum.pdf"
               download={"Curriculum"}
-              title="Currículo"
+              title={language === "en" ? "Resume" : "Currículo"}
               className={`${styles.iconLink} ${
                 lightMode ? styles.light : styles.dark
               }`}
-              style={{ fontSize: 65 }}
-              >
-              <HiDocumentText />
+            >
+              <FaFileDownload />
             </a>
-
             <div
               onClick={() => executeScroll()}
-              title="Projetos"
+              title={language === "en" ? "Projects" : "Projetos"}
               className={`${styles.iconLink} ${
                 lightMode ? styles.light : styles.dark
               }`}
-              style={{ fontSize: 60 }}
-              >
+            >
               <FaLaptopCode />
             </div>
           </div>
-        </div>
-        <p
+        <div
           className={`${styles.summary} ${
             lightMode ? styles.light : styles.dark
           }`}
-          >
-          Tenho 23 anos e estou estudando desenvolvimento front-end com foco em
-          React há 1 ano.
-        </p>
+        >
+          <p className={styles.summaryText}>
+            {language === "en"
+              ? "I'm 23 years old and I've been studying front-end development with a focus on React for 1 year."
+              : "Tenho 23 anos e estou estudando desenvolvimento front-end com foco em React há 1 ano."}
+          </p>
+        </div>
       </div>
     </div>
   );

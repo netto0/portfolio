@@ -1,121 +1,221 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-h1, p {
-    margin: 0;
-    padding: 0;
+h1,
+p {
+  margin: 0;
+  padding: 0;
 }
 
 .container {
-    width: 100%;
-    height: 85vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+  border: var(--dev-border);
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.presentation {
-    display: grid;
-    grid-template-rows: 1fr 1fr auto;
-    grid-template-columns: 1fr auto;
-    height: fit-content;
-    width: fit-content;
-
+.presentationPT {
+  border: var(--dev-border);
+  display: grid;
+  grid-template-rows: 1fr auto auto auto;
+  grid-template-columns: 320px auto auto;
+  grid-template-areas:
+    "occupation1 occupation1 occupation1"
+    "myName occupation2 occupation2"
+    "links occupation2 occupation2"
+    "summary summary summary";
 }
 
-.occupation{
-    font-family: InterBlack;
-    text-align: right;
-    font-size: 128px;
-    line-height: 130px;
-    width: fit-content;
+.presentationEN {
+  border: var(--dev-border);
+  display: grid;
+  grid-template-rows: 1fr auto auto auto;
+  grid-template-columns: auto auto auto;
+  grid-template-areas:
+    "occupation1 occupation1 myName"
+    "occupation1 occupation1 links"
+    "occupation2 occupation2 occupation2"
+    "summary summary summary";
 }
 
-.occupation.pt1 {
-    grid-column-start: 1;
-    grid-column-end: 3;
+.occupationText {
+  font-family: InterBlack;
+  line-height: 120px;
+  font-size: 128px;
 }
 
-.occupation.pt2 {
-    grid-column-start: auto;
-    grid-column-end: 3;
-    justify-self: right;
+.occupationText.right {
+  text-align: right;
 }
 
-.occupation.light {
-    color: var(--light-primary-color);
+.myName {
+  grid-area: myName;
+  border: var(--dev-border);
 }
 
-.occupation.dark {
-    color: var(--dark-primary-color);
+.occupationPt1 {
+  border: var(--dev-border);
+  width: 100%;
+  grid-area: occupation1;
 }
 
-.salutationLinks {
-    width: fit-content;
-    justify-self: center;
-    grid-row-start: 2;
-    grid-row-end: 3;
+.occupationPt2 {
+  border: var(--dev-border);
+  width: 100%;
+  justify-self: right;
+  grid-area: occupation2;
 }
 
 .salutation {
-    font-size: 32px; 
-    font-weight: 700;
-    top: 130px;
-    left: 5px;
-}
-
-.salutation.light {
-    color: var(--light-secondary-color);
-}
-
-.salutation.dark {
-    color: var(--dark-secondary-color);
+  font-size: 32px;
+  font-weight: 700;
+  top: 130px;
+  left: 5px;
 }
 
 .summary {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    width: 770px;
-    font-size: 32px;
-    
-    font-weight: 700;
-    font-size: 24px;
-    top: 260px;
-    left: 390px;
+  border: var(--dev-border);
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  grid-area: summary;
 }
 
-.summary.light {
-    color: var(--light-secondary-color);
-}
-
-.summary.dark {
-    color: var(--dark-secondary-color);
+.summaryText {
+  width: 770px;
+  justify-self: right;
+  font-size: 32px;
+  font-weight: 700;
+  font-size: 24px;
 }
 
 .iconLinks {
+  border: var(--dev-border);
+  width: fit-content;
+  display: flex;
+  gap: 0.8em;
+  justify-self: center;
+  grid-area: links;
+}
+
+.iconLink {
+  font-size: 55px;
+}
+
+.occupation.light,
+.occupationText.light,
+.iconLink.light {
+  color: var(--light-primary-color);
+}
+
+.iconLink.light:hover,
+.summary.light,
+.salutation.light {
+  color: var(--light-secondary-color);
+}
+
+.iconLink.dark,
+.occupationText.dark,
+.occupation.dark {
+  color: var(--dark-primary-color);
+}
+
+.summary.dark,
+.salutation.dark,
+.iconLink.dark:hover {
+  color: var(--dark-secondary-color);
+}
+
+@media screen and (max-width: 640px) {
+  .container {
+    border: var(--dev-border);
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .presentationPT {
+    border: var(--dev-border);
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-columns: 47.5% 47.5%;
+    grid-template-areas:
+      "myName links"
+      "occupation1 occupation1"
+      "occupation2 occupation2"
+      "summary summary";
+    justify-content: center;
+  }
+
+  .presentationEN {
+    border: var(--dev-border);
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-columns: 47.5% 47.5%;
+    grid-template-areas:
+      "myName links"
+      "occupation1 occupation1"
+      "occupation2 occupation2"
+      "summary summary";
+    justify-content: center;
+  }
+
+  .occupationText {
+    font-family: InterBlack;
+    line-height: 45px;
+    font-size: 45px;
+    text-align: right;
+  }
+
+  .occupationPt1 {
+    border: var(--dev-border);
+    width: 100%;
+    margin-top: .5em;
     
-    top: 180px;
-    left: 30px;
+  }
+
+  .occupationPt2 {
+    border: var(--dev-border);
+    width: 100%;
+    margin-bottom: .5em;
+  }
+
+  .salutation {
+    font-size: 20px;
+    /* text-indent: .4em; */
+    text-align: right;
+  }
+  
+  .myName {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: right;
+    height: 100%;
+  }
+
+  .iconLinks {
     width: fit-content;
     display: flex;
-    gap: .8em;
-    align-items: center;
-}
+    gap: 0.5em;
+    justify-self: end;
+  }
 
-.iconLink.light {
-    color: var(--light-primary-color);
-}
+  .iconLink {
+    font-size: 35px;
+    height: 35px;
+  }
 
-.iconLink.light:hover {
-    color: var(--light-secondary-color);
-}
-
-.iconLink.dark {
-    color: var(--dark-primary-color);
-}
-
-.iconLink.dark:hover {
-    color: var(--dark-secondary-color);
+  .summaryText {
+    width: 100%;
+    justify-self: right;
+    font-weight: 700;
+    font-size: 15px;
+    text-align: center;
+  }
 }

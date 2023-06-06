@@ -1,7 +1,6 @@
 import styles from './App.module.css'
 import React, { useRef } from 'react';
 import Presentation from './components/Presentation'
-import PresentationEnglish from './components/PresentationEnglish'
 import Header from './components/Header'
 import { GlobalStyleContext } from './providers/globalStyle';
 import Projects from './components/Projects';
@@ -19,7 +18,7 @@ function App() {
     <div className={`${styles.background} ${lightMode ? styles.light : styles.dark}`}>
       <Header/>
       {/* <Presentation executeScroll={executeScroll}/> */}
-      <PresentationEnglish executeScroll={executeScroll}/>
+      <Presentation executeScroll={executeScroll}/>
       <Projects ref={myRef}/>
     </div>
   )
