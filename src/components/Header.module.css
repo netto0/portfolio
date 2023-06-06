@@ -1,10 +1,11 @@
 .container {
     box-sizing: border-box;
+    border: var(--dev-border);
     display: flex;
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    /* border: 2px solid black; */
+    padding: .7rem;
 }
 
 .container.light {
@@ -16,8 +17,8 @@
 }
 
 .container svg {
-    font-size: 40px;
-    margin: .5em;
+    font-size: 2.5rem;
+    /* margin: .5em; */
 }
 
 .container.light svg:hover {
@@ -30,7 +31,8 @@
 
 @media screen and (max-width: 640px) {
     .container svg {
-        font-size: 30px;
-        /* margin: .5em; */
+        border: var(--dev-border);
+        font-size: 2rem;
+        /* width: 1em; */
     }
 }

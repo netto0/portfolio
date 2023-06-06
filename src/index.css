@@ -13,7 +13,6 @@ svg:hover {
     180deg,
     #ffc72c 0%,
     #ff8a00 50%,
-    /* #651f71 100% */
     #833219 100%
   );
   --background-dark-gradient: linear-gradient(
@@ -28,7 +27,7 @@ svg:hover {
   --light-secondary-color: #3210B8;
   --dark-primary-color: #ad15b0;
   --dark-secondary-color: #6914ac;
-  /* --dev-border: 1px solid black; */
+  --dev-border: 1px solid black;
 }
 @font-face {
   font-family: Inter;
@@ -45,13 +44,16 @@ svg:hover {
 }
 
 html {
-  height: 100vh;
-  padding: 0;
+  /* height: 100vh; */
+  /* padding: 0; */
   scroll-behavior: smooth;
+  width: 100%;
+  margin: 0;
+  background: var(--background-light-gradient);
 }
 
 body {
-  height: 100vh;
+  /* height: 100vh; */
   margin: none;
   user-select: none;
 }

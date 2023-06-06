@@ -2,7 +2,8 @@
     width: 100%;
     display: flex;
     justify-content: space-around;
-    padding: 10px;
+    padding: 1rem;
+
 }
 
 .project {
@@ -11,7 +12,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
 }
 
 .project img {
@@ -21,16 +22,16 @@
 .project img:hover {
     transition: .3s;
     cursor: pointer;
-    transform: translateY(-30px);
+    transform: translateY(-2rem);
 }
 
 .projectName {
     font-family: InterBlack;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 2.5rem;
     margin: 0;
     padding: 0;
-    margin-top: .5em;
+    margin-top: .5rem;
 }
 
 
@@ -44,7 +45,7 @@
 
 .projectDescription {
     font-family: Inter;
-    font-size: 20px;
+    font-size: 1.5rem;
     margin: 0;
     padding: 0;
     margin-bottom: 1em;
@@ -60,36 +61,37 @@
 
 
 img[alt="Phone"] {
-    transform: translate(-120px, 0);
+    transform: translate(-7rem, 0);
 }
 
 img[alt="Phone"]:hover {
-    transform: translate(-120px, -30px);
+    transform: translate(-7rem, -2rem);
 }
 
 .phoneImage {
     position: absolute;
-    width: 220px;
+    width: 13.75rem;
     z-index: 2;
     bottom: 18%;
     /* left: -120px; */
 }
 
 .tabletImage {
-    width: 500px;
+    width: 31.25rem;
     z-index: 1;
 }
 
 @media screen and (max-width: 640px) {
     img[alt="Phone"] {
-        transform: translate(-20px, -10px);
+        transform: translate(-1.5rem, -.8rem);
         position: absolute;
         z-index: 2;
         width: 100px;
+        width: .8rem;
     }
     
     .tabletImage {
-        width: 235px;
+        width: 14.7rem;
         z-index: 1;
     }
 
@@ -102,8 +104,8 @@ img[alt="Phone"]:hover {
     }
 
     .projectName {
-        font-size: 30px;
-        margin-top: .2em;
+        font-size: 2rem;
+        margin-top: .2rem;
     }
 
     .project {
@@ -118,7 +120,7 @@ img[alt="Phone"]:hover {
 
     .projectDescription {
         font-family: Inter;
-        font-size: 15px;
+        font-size: 1rem;
         margin: 0;
     }
 }
