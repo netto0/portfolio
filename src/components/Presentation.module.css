@@ -133,30 +133,33 @@ p {
   .container {
     border: var(--dev-border);
     width: 100%;
-    height: 75vh;
+    height: 88vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 0;
   }
 
   .presentationPT {
     border: var(--dev-border);
     display: grid;
+    padding: 1em;
     grid-template-rows: auto auto auto auto auto;
-    grid-template-columns: 47.5% 47.5%;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas:
-      "myName links"
-      "occupation1 occupation1"
-      "occupation2 occupation2"
-      "summary summary";
+    "myName links"
+    "occupation1 occupation1"
+    "occupation2 occupation2"
+    "summary summary";
     justify-content: center;
   }
 
   .presentationEN {
     border: var(--dev-border);
     display: grid;
-    grid-template-rows: auto auto auto auto auto;
-    grid-template-columns: 47.5% 47.5%;
+    padding: 1em;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas:
       "myName links"
       "occupation1 occupation1"
@@ -196,14 +199,23 @@ p {
     flex-direction: column;
     justify-content: end;
     align-items: right;
+    width: 105%;
     height: 100%;
   }
 
   .iconLinks {
     width: fit-content;
     display: flex;
-    gap: 0.5em;
+    gap: 0.2em;
     justify-self: end;
+  }
+
+  .iconLinks > a:first-child {
+    margin-right: -6px;
+  }
+
+  .iconLinks > :last-child {
+    font-size: 38px;
   }
 
   .iconLink {

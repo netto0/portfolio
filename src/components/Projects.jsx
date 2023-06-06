@@ -10,12 +10,12 @@ const Projects = React.forwardRef((props, ref) => {
       <div className={styles.project}>
         <div className={styles.projectImages}>
           <img
-            src="src\assets\imgs\Iphone14a.png"
+            src="Iphone14a.png"
             alt="Phone"
             className={styles.phoneImage}
           />
           <img
-            src="src\assets\imgs\Ipad.png"
+            src="Ipad.png"
             alt="Tablet"
             className={styles.tabletImage}
           />
@@ -38,12 +38,12 @@ const Projects = React.forwardRef((props, ref) => {
       <div className={styles.project}>
         <div className={styles.projectImages}>
           <img
-            src="src\assets\imgs\Iphone14a.png"
+            src="Iphone14a.png"
             alt="Phone"
             className={styles.phoneImage}
           />
           <img
-            src="src\assets\imgs\Ipad.png"
+            src="Ipad.png"
             alt="Tablet"
             className={styles.tabletImage}
           />

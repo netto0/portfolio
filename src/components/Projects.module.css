@@ -6,10 +6,12 @@
 }
 
 .project {
+    border: var(--dev-border);
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 1em;
 }
 
 .project img {
@@ -79,15 +81,44 @@ img[alt="Phone"]:hover {
 }
 
 @media screen and (max-width: 640px) {
-    .phoneImage {
+    img[alt="Phone"] {
+        transform: translate(-20px, -10px);
         position: absolute;
-        width: 120px;
         z-index: 2;
-        bottom: 18%;
+        width: 100px;
     }
     
     .tabletImage {
-        width: 200px;
+        width: 235px;
         z-index: 1;
+    }
+
+    .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+
+    .projectName {
+        font-size: 30px;
+        margin-top: .2em;
+    }
+
+    .project {
+        border: var(--dev-border);
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 4em;
+    }
+
+    .projectDescription {
+        font-family: Inter;
+        font-size: 15px;
+        margin: 0;
     }
 }
