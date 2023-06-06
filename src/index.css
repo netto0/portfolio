@@ -61,3 +61,12 @@ body {
 head {
   height: 100vh;
 }
+
+@media screen and (max-width: 640px) {
+  svg:hover {
+    cursor: pointer;
+    transition: 0;
+    /* transform: translateY(-10px); */
+  }
+  
+}

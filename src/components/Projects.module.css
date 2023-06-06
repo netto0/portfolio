@@ -22,7 +22,7 @@
 .project img:hover {
     transition: .3s;
     cursor: pointer;
-    transform: translateY(-2rem);
+    transform: translateY(-1rem);
 }
 
 .projectName {
@@ -65,7 +65,7 @@ img[alt="Phone"] {
 }
 
 img[alt="Phone"]:hover {
-    transform: translate(-7rem, -2rem);
+    transform: translate(-7rem, -1rem);
 }
 
 .phoneImage {
@@ -73,7 +73,6 @@ img[alt="Phone"]:hover {
     width: 13.75rem;
     z-index: 2;
     bottom: 18%;
-    /* left: -120px; */
 }
 
 .tabletImage {
@@ -86,8 +85,17 @@ img[alt="Phone"]:hover {
         transform: translate(-1.5rem, -.8rem);
         position: absolute;
         z-index: 2;
-        width: 100px;
-        width: .8rem;
+        width: 6rem;
+    }
+
+    img[alt="Phone"]:hover {
+        transform: translate(-1.5rem, -1.5rem);
+    }
+
+    .project img:hover {
+        transition: .3s;
+        cursor: pointer;
+        /* transform: translateY(-2rem); */
     }
     
     .tabletImage {
