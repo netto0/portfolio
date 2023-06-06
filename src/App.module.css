@@ -1,7 +1,7 @@
 .background {
     box-sizing: border-box;
     width: 100%;
-    height: 2160px;
+    /* height: 2160px; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,4 +14,22 @@
 
 .background.dark {
     background: var(--background-dark-gradient);
+}
+
+@media screen and (max-width: 640px) {
+    .background {
+        box-sizing: border-box;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .background.light {
+        background: var(--background-light-gradient);
+    }
+
+    .background.dark {
+        background: var(--background-dark-gradient);
+    }
 }

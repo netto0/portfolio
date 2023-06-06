@@ -104,12 +104,6 @@ h1, p {
     align-items: center;
 }
 
-
-
-.iconLink {
-    font-size: 55px;
-}
-
 .iconLink.light {
     color: var(--light-primary-color);
 }

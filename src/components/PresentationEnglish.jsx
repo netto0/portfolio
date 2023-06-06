@@ -1,9 +1,10 @@
 import React from "react";
 import styles from "./PresentationEnglish.module.css";
-import { BsLinkedin, BsGithub } from "react-icons/bs";
-import { FaLaptopCode } from "react-icons/fa";
-import { HiDocumentText } from "react-icons/hi";
+import { BsLinkedin, BsGithub, BsFillFileEarmarkCodeFill } from "react-icons/bs";
+import { FaLaptopCode, FaFileDownload } from "react-icons/fa";
+import { HiDocumentDownload, HiCloudDownload } from "react-icons/hi";
 import { GlobalStyleContext } from "../providers/globalStyle";
+
 
 export default function PresentationEnglish({ executeScroll }) {
   const { lightMode, language } = React.useContext(GlobalStyleContext);
@@ -32,10 +33,10 @@ export default function PresentationEnglish({ executeScroll }) {
             <a href="https://www.linkedin.com/in/orlandi-netto/" target="_blank" title="LinkedIn" className={`${styles.iconLink} ${lightMode ? styles.light : styles.dark}`}style={{ marginLeft: "10px" }}>
               <BsLinkedin />
             </a>
-            <a href="src\assets\resume\curriculum.pdf" download={"Curriculum"} title={language === "en" ? "Resume" : "Currículo"} className={`${styles.iconLink} ${lightMode ? styles.light : styles.dark}`} style={{ fontSize: 65 }}>
-              <HiDocumentText />
+            <a href="src\assets\resume\curriculum.pdf" download={"Curriculum"} title={language === "en" ? "Resume" : "Currículo"} className={`${styles.iconLink} ${lightMode ? styles.light : styles.dark}`}>
+              <FaFileDownload />
             </a>
-            <div onClick={() => executeScroll()} title={language === "en" ? "Projects" : "Projetos"} className={`${styles.iconLink} ${lightMode ? styles.light : styles.dark}`} style={{ fontSize: 60 }}>
+            <div onClick={() => executeScroll()} title={language === "en" ? "Projects" : "Projetos"} className={`${styles.iconLink} ${lightMode ? styles.light : styles.dark}`}>
               <FaLaptopCode />
             </div>
           </div>
