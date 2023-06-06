@@ -27,7 +27,7 @@ svg:hover {
   --light-secondary-color: #3210B8;
   --dark-primary-color: #ad15b0;
   --dark-secondary-color: #6914ac;
-  --dev-border: 1px solid black;
+  /* --dev-border: 1px solid black; */
 }
 @font-face {
   font-family: Inter;
