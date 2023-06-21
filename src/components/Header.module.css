@@ -35,4 +35,12 @@
         font-size: 2rem;
         /* width: 1em; */
     }
+
+    .container.light svg:hover {
+        color: var(--light-primary-color);
+    }
+    
+    .container.dark svg:hover {
+        color: var(--dark-primary-color);
+    }
 }

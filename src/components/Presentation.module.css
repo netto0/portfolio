@@ -232,4 +232,12 @@ p {
     font-size: .9rem;
     text-align: center;
   }
+
+  .iconLink.dark:hover {
+    color: var(--dark-primary-color);
+  }
+
+  .iconLink.light:hover {
+    color: var(--light-primary-color);
+  }
 }
