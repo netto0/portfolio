@@ -87,16 +87,6 @@ img[alt="Phone"]:hover {
         z-index: 2;
         width: 6rem;
     }
-
-    img[alt="Phone"]:hover {
-        transform: translate(-1.5rem, -1.5rem);
-    }
-
-    .project img:hover {
-        transition: .3s;
-        cursor: pointer;
-        /* transform: translateY(-2rem); */
-    }
     
     .tabletImage {
         width: 14.7rem;
@@ -131,4 +121,19 @@ img[alt="Phone"]:hover {
         font-size: 1rem;
         margin: 0;
     }
+
+    .project img:hover {
+        transition: .3s;
+        cursor: pointer;
+        transform: translateY(0rem);
+    }
+
+    img[alt="Phone"] {
+        transform: translate(-2rem, -.8rem);
+    }
+
+    img[alt="Phone"]:hover {
+        transform: translate(-2rem, -.8rem);
+    }
+    
 }

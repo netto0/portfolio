@@ -3,7 +3,7 @@ import React, { useState } from "react";
 export const GlobalStyleContext = React.createContext({})
 
 export const GlobalStyleProvider = (props) => {
-    const [lightMode,setLightMode] = useState(true)
+    const [lightMode,setLightMode] = useState(false)
     const [language, setLanguage] = useState("pt-Br")
     
     return (
