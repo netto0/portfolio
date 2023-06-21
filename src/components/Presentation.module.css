@@ -170,25 +170,30 @@ p {
 
   .occupationText {
     font-family: InterBlack;
-    line-height: 2.4rem;
-    font-size: 2.3rem;
-    text-align: right;
+    line-height: 3rem;
+    font-size: 2.5rem;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
   }
-
+  
   .occupationPt1 {
     border: var(--dev-border);
     width: 100%;
     margin-top: .3rem;
+    text-align: center;
   }
-
+  
   .occupationPt2 {
     border: var(--dev-border);
     width: 100%;
     margin-bottom: .3rem;
+    text-align: center;
   }
 
   .salutation {
-    font-size: .9rem;
+    font-size: .93rem;
+    text-align: left;
   }
   
   .myName {
@@ -196,7 +201,7 @@ p {
     width: 100%;
     flex-direction: column;
     justify-content: end;
-    
+    align-items: start;
   }
 
   .iconLinks {

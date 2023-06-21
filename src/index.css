@@ -44,12 +44,9 @@ svg:hover {
 }
 
 html {
-  /* height: 100vh; */
-  /* padding: 0; */
   scroll-behavior: smooth;
   width: 100%;
   margin: 0;
-  background: var(--background-light-gradient);
 }
 
 body {
@@ -62,11 +59,8 @@ head {
   height: 100vh;
 }
 
-@media screen and (max-width: 640px) {
-  svg:hover {
-    cursor: pointer;
-    transition: 0;
-    /* transform: translateY(-10px); */
+@media screen and (max-width: 640px) {  
+  body {
+    margin: 0;
   }
-  
 }
