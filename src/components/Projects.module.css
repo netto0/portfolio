@@ -13,12 +13,9 @@
     justify-content: flex-start;
     justify-self: flex-start;
     flex-wrap: nowrap;
-    /* width: fit-content; */
-    /* margin-left: 3rem; */
-
     overflow-x: scroll;
     gap: 1rem;
-    margin-left: 10vw;
+    padding: 0 10vw;
     
   }
 

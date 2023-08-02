@@ -185,11 +185,8 @@
     font-size: 1.2rem;
   }
 
-  /* .occupationText {
-    font-family: InterBlack;
-    margin: 0;
-    line-height: 2.25rem;
-    width: 100%;
-    font-size: clamp(.5rem, 2.25rem + 2vw, 3rem);
-  } */
+  .iconLink:hover {
+    transform: translateY(0px);
+  }
+
 }
