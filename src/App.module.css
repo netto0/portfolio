@@ -61,3 +61,11 @@
 ::-webkit-scrollbar-thumb:hover {
   background: var(--dark-primary-color);
 }
+
+.line {
+  background-color: red;
+  position: absolute;
+  top: 99.9vh;
+  width: 100%;
+  height: 1px;
+}

@@ -14,6 +14,7 @@ function App() {
 
   return (
     <div className={`${styles.background} ${lightMode ? styles.light : styles.dark}`}>
+        {/* <div className={styles.line}/> */}
         <Header />
         <Presentation executeScroll={executeScroll} />
         <Projects ref={myRef} />
