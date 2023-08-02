@@ -1,7 +1,12 @@
 import React from "react";
 import styles from "./Presentation.module.css";
+
 import { BsLinkedin, BsGithub } from "react-icons/bs";
-import { FaLaptopCode, FaFileDownload } from "react-icons/fa";
+import { HiDocumentText } from "react-icons/hi";
+import { MdPictureAsPdf } from "react-icons/md";
+import { FaLinkedinIn, FaGithubAlt, FaRegFilePdf } from "react-icons/fa";
+import { FaCode, FaFile } from "react-icons/fa";
+
 import { GlobalStyleContext } from "../providers/globalStyle";
 
 export default function Presentation({ executeScroll }) {
@@ -12,57 +17,25 @@ export default function Presentation({ executeScroll }) {
   };
 
   return (
-    <div className={styles.container}>
-      <div
-        className={`${
-          language === "en" ? styles.presentationEN : styles.presentationPT
-        }`}
-      >
-        <div
-          className={`${styles.occupationPt1} ${
-            lightMode ? styles.light : styles.dark
-          }`}
-        >
-          <p
-            className={`${styles.occupationText} ${
-              lightMode ? styles.light : styles.dark
-            }`}
-          >
-            {language === "en" ? "FRONT-END" : "PROGRAMADOR"}
-          </p>
+    <main className={styles.presentationContainer}>
+      <div className={styles.presentationGrid}>
+        <div className={`${styles.occupation1} ${styles.dark}`}>
+          <h1 className={`${styles.occupationText} ${styles.dark}`}>
+            DESENVOLVEDOR
+          </h1>
         </div>
-        <div
-          className={`${styles.occupationPt2} ${
-            lightMode ? styles.light : styles.dark
-          }`}
-        >
-          <p
-            className={`${styles.occupationText} ${styles.right} ${
-              lightMode ? styles.light : styles.dark
-            }`}
-          >
-            {language === "en" ? "DEVELOPER" : "FRONT-END"}
-          </p>
+        <div className={`${styles.occupation2} ${styles.dark}`}>
+          <h1 className={`${styles.occupationText} ${styles.dark}`}>FRONT-END</h1>
         </div>
-          <div className={styles.myName}>
-            <p
-              className={`${styles.salutation} ${
-                lightMode ? styles.light : styles.dark
-              }`}
-            >
-              {language === "en"
-                ? "Hi, my name is Netto"
-                : "Oi, me chamo Netto"}
-            </p>
-          </div>
+          <p className={`${styles.salutation} ${styles.dark}`}>
+            Oi, me chamo Netto
+          </p>
           <div className={styles.iconLinks}>
             <a
               href="https://github.com/netto0"
               target="_blank"
               title="GitHub"
-              className={`${styles.iconLink} ${
-                lightMode ? styles.light : styles.dark
-              }`}
+              className={`${styles.iconLink} ${lightMode ? styles.light : styles.dark}`}
             >
               <BsGithub />
             </a>
@@ -70,45 +43,33 @@ export default function Presentation({ executeScroll }) {
               href="https://www.linkedin.com/in/orlandi-netto/"
               target="_blank"
               title="LinkedIn"
-              className={`${styles.iconLink} ${
-                lightMode ? styles.light : styles.dark
-              }`}
-              style={{ marginLeft: "10px" }}
+              className={`${styles.iconLink} ${lightMode ? styles.light : styles.dark}`}
             >
-              <BsLinkedin />
+              <FaLinkedinIn />
             </a>
             <a
               href="src\assets\resume\curriculum.pdf"
               download={"Curriculum"}
               title={language === "en" ? "Resume" : "Currículo"}
-              className={`${styles.iconLink} ${
-                lightMode ? styles.light : styles.dark
-              }`}
+              className={`${styles.iconLink} ${lightMode ? styles.light : styles.dark}`}
             >
-              <FaFileDownload />
+              <HiDocumentText />
             </a>
             <div
               onClick={() => executeScroll()}
-              title={language === "en" ? "Projects" : "Projetos"}
-              className={`${styles.iconLink} ${
-                lightMode ? styles.light : styles.dark
-              }`}
+              title="Projetos"
+              className={`${styles.iconLink} ${lightMode ? styles.light : styles.dark}`}
             >
-              <FaLaptopCode />
+              <FaCode />
             </div>
           </div>
-        <div
-          className={`${styles.summary} ${
-            lightMode ? styles.light : styles.dark
-          }`}
-        >
-          <p className={styles.summaryText}>
-            {language === "en"
-              ? "I'm 23 years old and I've been studying front-end development with a focus on React for 1 year."
-              : "Tenho 23 anos e estou estudando desenvolvimento front-end com foco em React há 1 ano."}
+        <div className={`${styles.summary} ${styles.dark}`}>
+          <p>
+            Tenho 23 anos e estou estudando desenvolvimento front-end com foco
+            em React há 1 ano.
           </p>
         </div>
       </div>
-    </div>
+    </main>
   );
 }

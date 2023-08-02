@@ -1,12 +1,3 @@
-svg {
-  transition: 0.2s;
-}
-
-svg:hover {
-  cursor: pointer;
-  transition: 0.2s;
-  transform: translateY(-10px);
-}
 
 :root {
   --background-light-gradient: linear-gradient(
@@ -17,16 +8,16 @@ svg:hover {
   );
   --background-dark-gradient: linear-gradient(
     180deg,
-    #020b57 0%,
-    #35049c 50%,
+    #1e1e1e 0%,
+    #261e3a 50%,
     #10022e 100%
   );
-  --light-primary-color: #651f71;
   --light-primary-color: #1F2B53;
-  --light-secondary-color: #7037cd;
   --light-secondary-color: #3210B8;
-  --dark-primary-color: #ad15b0;
-  --dark-secondary-color: #6914ac;
+  --light-third-color: #3b3b3b;
+  --dark-primary-color: #AC31E7;
+  --dark-secondary-color: #8658EA;
+  --dark-third-color: #331e56;
   /* --dev-border: 1px solid black; */
 }
 @font-face {
@@ -59,7 +50,7 @@ head {
   height: 100vh;
 }
 
-@media screen and (max-width: 640px) {  
+/* @media screen and (max-width: 640px) {  
   body {
     margin: 0;
   }
@@ -69,4 +60,4 @@ head {
     transition: 0;
     transform: translateY(0px);
   }
-}
+} */

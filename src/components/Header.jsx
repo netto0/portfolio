@@ -1,19 +1,23 @@
 import React from "react";
 import styles from "./Header.module.css";
-import { BsLightbulbFill, BsLightbulbOffFill } from "react-icons/bs";
-import { MdLanguage } from "react-icons/md";
+
 import { GlobalStyleContext } from "../providers/globalStyle";
 
+import { BsLightbulbFill, BsLightbulbOffFill } from "react-icons/bs";
+import { HiSun, HiMoon } from "react-icons/hi";
+import { TbMoonFilled} from "react-icons/tb";
+import { MdLanguage } from "react-icons/md";
+
 export default function Header() {
-  const { lightMode, setLightMode, language, setLanguage } =
-    React.useContext(GlobalStyleContext);
+
+  const {lightMode, setLightMode} = React.useContext(GlobalStyleContext)
 
   return (
-    <header className={`${styles.container} ${lightMode ? styles.light : styles.dark}`}>
-      <div className="colorModeSwitch" onClick={() => setLightMode(!lightMode)}>
-        {lightMode ? <BsLightbulbFill /> : <BsLightbulbOffFill />}
+    <header className={styles.headerContainer}>
+      <div className={`${styles.headerButton} ${lightMode ? styles.light : styles.dark}`} onClick={() => setLightMode(!lightMode)}>
+        {lightMode ? <TbMoonFilled/> : <HiSun/>}
       </div>
-      <div onClick={() => {language === "pt-Br" ? setLanguage("en") : setLanguage("pt-Br")}}>
+      <div className={`${styles.headerButton} ${lightMode ? styles.light : styles.dark}`} onClick={() => console.log("Change Language")}>
         <MdLanguage />
       </div>
     </header>

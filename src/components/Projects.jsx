@@ -1,69 +1,21 @@
 import styles from "./Projects.module.css";
 import React from "react";
-import { GlobalStyleContext } from "../providers/globalStyle";
+
+import serj from "../assets/images/serj.jpg";
+import { FaReact, FaHtml5, FaCss3Alt } from "react-icons/fa";
+import { SiJavascript } from "react-icons/si";
+import Project from "./Project";
+
+const texto =
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. InIn ac ipsum metus. Sed pretium hendrerit vestibulum. Duis vehicula neque eget massa cursus, id aliquam dolor rhoncusIn ac ipsum metus. Sed pretium hendrerit vestibulum. Duis vehicula neque eget massa cursus, id aliquam dolor rhoncus ac ipsum metus. Sed pretium hendrerit vestibulum. Duis vehicula neque eget massa cursus, id aliquam dolor rhoncus.";
 
 const Projects = React.forwardRef((props, ref) => {
-  const { lightMode } = React.useContext(GlobalStyleContext);
-
   return (
-    <div className={styles.container} ref={ref}>
-      <div className={styles.project}>
-        <div className={styles.projectImages}>
-          <img
-            src="Iphone14a.png"
-            alt="Phone"
-            className={styles.phoneImage}
-          />
-          <img
-            src="Ipad.png"
-            alt="Tablet"
-            className={styles.tabletImage}
-          />
-        </div>
-        <h1
-          className={`${styles.projectName} ${
-            lightMode ? styles.light : styles.dark
-          }`}
-        >
-          NOME DO PROJETO
-        </h1>
-        <h3
-          className={`${styles.projectDescription} ${
-            lightMode ? styles.light : styles.dark
-          }`}
-        >
-          BREVE DESCRIÇÃO
-        </h3>
-      </div>
-      <div className={styles.project}>
-        <div className={styles.projectImages}>
-          <img
-            src="Iphone14a.png"
-            alt="Phone"
-            className={styles.phoneImage}
-          />
-          <img
-            src="Ipad.png"
-            alt="Tablet"
-            className={styles.tabletImage}
-          />
-        </div>
-        <h1
-          className={`${styles.projectName} ${
-            lightMode ? styles.light : styles.dark
-          }`}
-        >
-          NOME DO PROJETO
-        </h1>
-        <h3
-          className={`${styles.projectDescription} ${
-            lightMode ? styles.light : styles.dark
-          }`}
-        >
-          BREVE DESCRIÇÃO
-        </h3>
-      </div>
-    </div>
+    <section className={styles.container} ref={ref}>
+      <Project name="Teste" image={serj} description={texto}/>
+      <Project />
+      <Project />
+    </section>
   );
 });
 

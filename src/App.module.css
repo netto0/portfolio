@@ -1,36 +1,63 @@
-.background {
-    box-sizing: border-box;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: .5rem;
+.background.dark {
+  background: var(--background-dark-gradient);
+}
+
+.background.dark svg,
+.background.dark h1 {
+  color: var(--dark-primary-color);
+  /* color: red; */
+}
+
+.background.dark p {
+  color: var(--dark-secondary-color);
+  /* color: blue; */
 }
 
 .background.light {
-    background: var(--background-light-gradient);
+  background: var(--background-light-gradient);
 }
 
-.background.dark {
-    background: var(--background-dark-gradient);
+.background.light svg,
+.background.light h1 {
+  color: var(--light-primary-color);
+  /* color: red; */
 }
 
-@media screen and (max-width: 640px) {
-    .background {
-        box-sizing: border-box;
-        width: 100%;
-        display: flex;
-    }
+.background.light p {
+  color: var(--light-secondary-color);
+  /* color: blue; */
+}
 
-    .background.light {
-        background: var(--background-light-gradient);
-    }
 
-    .background.dark {
-        background: var(--background-dark-gradient);
-    }
 
-    svg:hover {
-        transition: 0;
-    }
+
+
+
+
+
+
+.background {
+  width: 100%;
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--light-primary-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--dark-secondary-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--dark-primary-color);
 }
