@@ -18,11 +18,11 @@
 }
 
 .headerButton.light {
-  box-shadow: 2px 2px .2rem var(--light-third-color);
+  /* box-shadow: 2px 2px .2rem var(--light-third-color); */
 }
 
 .headerButton.dark {
-  box-shadow: 2px 2px .2rem var(--dark-secondary-color);
+  /* box-shadow: 2px 2px .2rem var(--dark-secondary-color); */
 }
 
 .headerButton:hover {

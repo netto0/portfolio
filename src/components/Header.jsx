@@ -14,8 +14,7 @@ export default function Header() {
 
   return (
     <header className={styles.headerContainer}>
-      {/* <div className={`${styles.headerButton} ${lightMode ? styles.light : styles.dark}`} onClick={() => setLightMode(!lightMode)}> */}
-      <div className={`${styles.headerButton} ${lightMode ? styles.light : styles.dark}`} onClick={() => console.log("Change Mode")}>
+      <div className={`${styles.headerButton} ${lightMode ? styles.light : styles.dark}`} onClick={() => setLightMode(!lightMode)}>
         {lightMode ? <TbMoonFilled/> : <HiSun/>}
       </div>
       <div className={`${styles.headerButton} ${lightMode ? styles.light : styles.dark}`} onClick={() => console.log("Change Language")}>

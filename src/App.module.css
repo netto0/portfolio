@@ -6,6 +6,10 @@
 .background.dark h1 {
   color: var(--dark-primary-color);
   /* color: red; */
+
+  background-image: var(--title-dark-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .background.dark p {
@@ -20,7 +24,7 @@
 .background.light svg,
 .background.light h1 {
   color: var(--light-primary-color);
-  /* color: red; */
+  color: red;
 }
 
 .background.light p {
@@ -39,7 +43,6 @@
 .background {
   width: 100%;
   display: flex;
-  width: 100vw;
   flex-direction: column;
   align-items: center;
   overflow-x: hidden;

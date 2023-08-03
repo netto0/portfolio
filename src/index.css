@@ -1,24 +1,32 @@
 
 :root {
+
   --background-light-gradient: linear-gradient(
     180deg,
     #ffc72c 0%,
     #ff8a00 50%,
     #833219 100%
   );
+
   --background-dark-gradient: linear-gradient(
     180deg,
     #1e1e1e 0%,
-    #261e3a 50%,
-    #10022e 100%
+    #1b1b1c 50%,
+    #080809 100%
   );
+
+  --title-dark-gradient: linear-gradient(
+    180deg,
+    #d81dd0 0%,
+    #7511f4 100%
+  );
+
   --light-primary-color: #1F2B53;
   --light-secondary-color: #3210B8;
   --light-third-color: #3b3b3b;
-  --dark-primary-color: #AC31E7;
-  --dark-secondary-color: #8658EA;
-  --dark-third-color: #331e56;
-  /* --dev-border: 1px solid black; */
+  --dark-primary-color: #d81dd0;
+  --dark-secondary-color: #B17CDB;
+  --dark-third-color: #28252cbb;
 }
 @font-face {
   font-family: Inter;
@@ -32,32 +40,15 @@
 
 * {
   font-family: Inter;
+  box-sizing: border-box;
 }
 
 html {
   scroll-behavior: smooth;
   width: 100%;
-  margin: 0;
 }
 
 body {
-  /* height: 100vh; */
   margin: none;
   user-select: none;
 }
-
-head {
-  height: 100vh;
-}
-
-/* @media screen and (max-width: 640px) {  
-  body {
-    margin: 0;
-  }
-  
-  svg:hover {
-    cursor: pointer;
-    transition: 0;
-    transform: translateY(0px);
-  }
-} */

@@ -3,7 +3,7 @@ import React from "react";
 
 import { GlobalStyleContext } from "../providers/globalStyle";
 
-import placeHolderImage from "../assets/images/placeHolderImage.png";
+import placeHolderImage from "../assets/images/placeHolderImageGray.png";
 
 import { FaReact, FaHtml5, FaCss3Alt } from "react-icons/fa";
 import { SiJavascript } from "react-icons/si";
