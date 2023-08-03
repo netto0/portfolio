@@ -3,9 +3,9 @@
 
   --background-light-gradient: linear-gradient(
     180deg,
-    #ffc72c 0%,
-    #ff8a00 50%,
-    #833219 100%
+    #e2e2e2 0%,
+    #c5c5c5 50%,
+    #a4a4a4 100%
   );
 
   --background-dark-gradient: linear-gradient(
@@ -15,18 +15,23 @@
     #080809 100%
   );
 
-  --title-dark-gradient: linear-gradient(
+  --title-light-gradient: linear-gradient(
     180deg,
     #d81dd0 0%,
     #7511f4 100%
   );
 
-  --light-primary-color: #1F2B53;
-  --light-secondary-color: #3210B8;
-  --light-third-color: #3b3b3b;
+  --title-dark-gradient: linear-gradient(
+    180deg,
+    #04B3EA 0%,
+    #9624EF 100%
+  );
+
+  --gray1: #5a5a5a;
+  --gray2: #ddd;
+  --gray3: #28252C;
   --dark-primary-color: #d81dd0;
-  --dark-secondary-color: #B17CDB;
-  --dark-third-color: #28252cbb;
+  /* --dark-secondary-color: #5A5050; */
 }
 @font-face {
   font-family: Inter;

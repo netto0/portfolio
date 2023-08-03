@@ -4,17 +4,13 @@
 
 .background.dark svg,
 .background.dark h1 {
-  color: var(--dark-primary-color);
-  /* color: red; */
-
   background-image: var(--title-dark-gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .background.dark p {
-  color: var(--dark-secondary-color);
-  /* color: blue; */
+  color: var(--gray1);
 }
 
 .background.light {
@@ -23,22 +19,14 @@
 
 .background.light svg,
 .background.light h1 {
-  color: var(--light-primary-color);
-  color: red;
+  background-image: var(--title-light-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .background.light p {
-  color: var(--light-secondary-color);
-  /* color: blue; */
+  color: var(--gray1);
 }
-
-
-
-
-
-
-
-
 
 .background {
   width: 100%;
@@ -54,11 +42,11 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--light-primary-color);
+  background: rgb(177, 177, 177);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--dark-secondary-color);
+  background: rgb(83, 83, 83);
 }
 
 ::-webkit-scrollbar-thumb:hover {

@@ -37,7 +37,7 @@ export default function Presentation({ executeScroll }) {
               title="GitHub"
               className={`${styles.iconLink} ${lightMode ? styles.light : styles.dark}`}
             >
-              <BsGithub />
+              <BsGithub style={{ fill: "url(#linear-gradient)" }}/>
             </a>
             <a
               href="https://www.linkedin.com/in/orlandi-netto/"
@@ -45,7 +45,7 @@ export default function Presentation({ executeScroll }) {
               title="LinkedIn"
               className={`${styles.iconLink} ${lightMode ? styles.light : styles.dark}`}
             >
-              <FaLinkedinIn />
+              <FaLinkedinIn style={{ fill: "url(#linear-gradient)" }}/>
             </a>
             <a
               href="src\assets\resume\curriculum.pdf"
@@ -53,15 +53,15 @@ export default function Presentation({ executeScroll }) {
               title={language === "en" ? "Resume" : "Currículo"}
               className={`${styles.iconLink} ${lightMode ? styles.light : styles.dark}`}
             >
-              <HiDocumentText />
+              <HiDocumentText style={{ fill: "url(#linear-gradient)" }}/>
             </a>
-            <div
+            <a
               onClick={() => executeScroll()}
               title="Projetos"
               className={`${styles.iconLink} ${lightMode ? styles.light : styles.dark}`}
             >
-              <FaCode />
-            </div>
+              <FaCode style={{ fill: "url(#linear-gradient)" }}/>
+            </a>
           </div>
         <div className={`${styles.summary} ${styles.dark}`}>
           <p>

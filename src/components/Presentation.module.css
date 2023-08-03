@@ -58,7 +58,7 @@
   font-weight: 700;
   justify-content: center;
   line-height: 100%;
-  font-size: clamp(2rem, 0.5rem + 2vw, 3rem);
+  font-size: clamp(2rem, 0.2rem + 2vw, 3rem);
 }
 
 .iconLinks {
@@ -72,10 +72,16 @@
   width: 100%;
 }
 
+.iconLinks > a:first-child {
+  /* background-color: red; */
+  font-size: clamp(1rem, 2rem + 2vw, 5rem);
+}
+
 .iconLink {
-  background-image: var(--title-dark-gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  /* background-image: var(--title-dark-gradient); */
+  /* -webkit-background-clip: text; */
+  /* color: red; */
+  /* -webkit-text-fill-color: transparent; */
 
   display: flex;
   justify-content: center;
@@ -83,14 +89,6 @@
   font-size: clamp(1rem, 2.5rem + 2vw, 5rem);
   border-radius: 5px;
   transition: 0.2s;
-}
-
-.iconLink.light {
-  /* box-shadow: 2px 2px 0.2rem var(--light-third-color); */
-}
-
-.iconLink.dark {
-  /* box-shadow: 2px 2px 0.2rem var(--dark-secondary-color); */
 }
 
 .iconLink:hover {
@@ -146,6 +144,11 @@
     justify-content: flex-end;
     /* gap: 0.5rem; */
     /* background-color: red; */
+  }
+
+  .iconLinks > a:first-child {
+    /* background-color: red; */
+    font-size: 1.8rem;
   }
 
   .iconLink {

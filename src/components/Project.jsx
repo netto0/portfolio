@@ -8,22 +8,26 @@ import placeHolderImage from "../assets/images/placeHolderImageGray.png";
 import { FaReact, FaHtml5, FaCss3Alt } from "react-icons/fa";
 import { SiJavascript } from "react-icons/si";
 
-export default function Project({ name, image, description, stack }) {
+export default function Project({ name, image, description, stack, link }) {
   const defaultName = "Nome do Projeto";
   const defaultDescription =
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ipsum metus. Sed pretium hendrerit vestibulum. Duis vehicula neque eget massa cursus, id aliquam dolor rhoncus.";
 
   const treatedStack = stack || [
-    <FaReact />,
-    <SiJavascript />,
-    <FaHtml5 />,
-    <FaCss3Alt />,
+    <FaReact style={{ fill: "url(#linear-gradient)" }} />,
+    <SiJavascript style={{ fill: "url(#linear-gradient)" }} />,
+    <FaHtml5 style={{ fill: "url(#linear-gradient)" }} />,
+    <FaCss3Alt style={{ fill: "url(#linear-gradient)" }} />,
   ];
 
-  const {lightMode} = React.useContext(GlobalStyleContext)
+  const { lightMode } = React.useContext(GlobalStyleContext);
 
   return (
-    <div className={`${styles.project} ${lightMode ? styles.light : styles.dark}`}>
+    <a
+      href={link}
+      target="_blank"
+      className={`${styles.project} ${lightMode ? styles.light : styles.dark}`}
+    >
       <h1>{name || defaultName}</h1>
       <img src={image || placeHolderImage} alt="Image" />
       <div className={styles.description}>
@@ -34,6 +38,6 @@ export default function Project({ name, image, description, stack }) {
           <span key={i}>{e}</span>
         ))}
       </div>
-    </div>
+    </a>
   );
 }
