@@ -11,6 +11,11 @@
   transition: 0.2s;
 }
 
+.project.blocked:hover {
+  cursor: not-allowed;
+  transform: translateY(0px);
+}
+
 .project.light {
   background-color: var(--gray2);
   box-shadow: 8px 10px 9px rgba(0, 0, 0, 0.15);
@@ -62,7 +67,6 @@
 .stack {
   display: flex;
   justify-content: center;
-  align-items: center;
   color: var(--dark-primary-color);
   font-size: 40px;
   gap: 1rem;
@@ -87,7 +91,7 @@
     border-radius: 10px;
     width: 83.33vw;
     height: calc(83.33vw / 0.81);
-    padding: .5rem 1.5rem;
+    padding: 0.5rem 1.5rem;
 
     transition: 0.2s;
   }
@@ -97,11 +101,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: aqua; */
     margin: 0;
     width: 100%;
     color: var(--dark-primary-color);
-    font-size: 24px;
     line-height: clamp(1rem, 2rem, 2rem);
     font-size: clamp(0.8rem, 0.9rem + 5vw, 1.5rem);
   }
@@ -110,7 +112,6 @@
     grid-area: image;
     margin: 0;
     width: 70.83vw;
-    height: 138px;
     height: calc(70.83vw / 1.78);
 
     justify-self: center;
@@ -119,7 +120,6 @@
 
   .description p {
     grid-area: description;
-    /* background-color: red; */
     height: 100%;
     color: var(--dark-secondary-color);
 
@@ -136,15 +136,14 @@
 
   .stack {
     grid-area: stack;
-    /* background-color: yellow; */
 
     display: flex;
     height: 40px;
     justify-content: flex-end;
-    color: var(--dark-primary-color);
     font-size: 30px;
     gap: 1rem;
   }
+
   .stack span {
     margin: 0;
     width: 24px;
