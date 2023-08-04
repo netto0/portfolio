@@ -1,6 +1,7 @@
 import styles from "./Projects.module.css";
 import React from "react";
-import aver4ageImg from '../assets/images/aver4age.png'
+import aver4ageImg from "../assets/images/aver4age.png";
+import Project from "./Project";
 
 import {
   SiJavascript,
@@ -10,7 +11,6 @@ import {
   SiReact,
   SiVuedotjs,
 } from "react-icons/si";
-import Project from "./Project";
 
 const Projects = React.forwardRef((props, ref) => {
   const aver4ageDesc =
@@ -38,17 +38,19 @@ const Projects = React.forwardRef((props, ref) => {
         description={aver4ageDesc}
         stack={aver4ageStack}
         image={aver4ageImg}
-        link='https://aver4age.vercel.app/'
+        link="https://aver4age.vercel.app/"
       />
       <Project
         name="Knowledge"
         description={knowledgeDesc}
         stack={knowledgeStack}
-      />
+        soon={true}
+        />
       <Project
         name="Expen$es"
         description={expensesDesc}
         stack={expensesStack}
+        soon={true}
       />
     </section>
   );

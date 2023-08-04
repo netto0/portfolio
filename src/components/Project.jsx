@@ -8,7 +8,14 @@ import placeHolderImage from "../assets/images/placeHolderImageGray.png";
 import { FaReact, FaHtml5, FaCss3Alt } from "react-icons/fa";
 import { SiJavascript } from "react-icons/si";
 
-export default function Project({ name, image, description, stack, link }) {
+export default function Project({
+  name,
+  image,
+  description,
+  stack,
+  link,
+  soon,
+}) {
   const defaultName = "Nome do Projeto";
   const defaultDescription =
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ipsum metus. Sed pretium hendrerit vestibulum. Duis vehicula neque eget massa cursus, id aliquam dolor rhoncus.";
@@ -26,7 +33,10 @@ export default function Project({ name, image, description, stack, link }) {
     <a
       href={link}
       target="_blank"
-      className={`${styles.project} ${lightMode ? styles.light : styles.dark}`}
+      className={`${styles.project} ${lightMode ? styles.light : styles.dark} ${
+        soon && styles.blocked
+      }`}
+      title={soon ? "EM BREVE" : null}
     >
       <h1>{name || defaultName}</h1>
       <img src={image || placeHolderImage} alt="Image" />

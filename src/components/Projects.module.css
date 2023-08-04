@@ -6,6 +6,11 @@
   padding: 1rem;
   margin-bottom: 6rem;
 }
+@media screen and (max-width: 1280px) {
+  .container > a:last-child {
+    display: none;
+  }
+}
 
 @media screen and (max-width: 640px) {
   .container {

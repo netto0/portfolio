@@ -23,6 +23,11 @@
   transform: translateY(-5px);
 }
 
+.headerContainer > div:last-child:hover {
+  transform: translateY(0px);
+  cursor: not-allowed;
+}
+
 @media screen and (max-width: 640px) {
   .headerButton:hover {
     transform: translateY(0px);

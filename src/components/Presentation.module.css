@@ -28,7 +28,6 @@
 
 .occupation1 {
   grid-area: occupation1;
-  /* background-color: red; */
 
   width: 100%;
   align-self: center;
@@ -36,7 +35,6 @@
 
 .occupation2 {
   grid-area: occupation2;
-  /* background-color: yellow; */
 
   width: 100%;
   align-self: center;
@@ -51,7 +49,6 @@
 
 .salutation {
   grid-area: salutation;
-  /* background-color: green; */
 
   display: flex;
   align-items: center;
@@ -63,8 +60,6 @@
 
 .iconLinks {
   grid-area: links;
-  /* background-color: blue; */
-  color: aliceblue;
 
   display: flex;
   justify-content: space-around;
@@ -73,16 +68,10 @@
 }
 
 .iconLinks > a:first-child {
-  /* background-color: red; */
   font-size: clamp(1rem, 2rem + 2vw, 5rem);
 }
 
 .iconLink {
-  /* background-image: var(--title-dark-gradient); */
-  /* -webkit-background-clip: text; */
-  /* color: red; */
-  /* -webkit-text-fill-color: transparent; */
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -99,7 +88,6 @@
 
 .summary {
   grid-area: summary;
-  /* background-color: orange; */
 
   width: clamp(42rem, 50vw, 60vw);
 }
@@ -116,7 +104,7 @@
   .presentationContainer {
     height: 75vh;
   }
-  
+
   .presentationGrid {
     display: grid;
     grid-template-rows: auto auto auto auto auto;
@@ -142,12 +130,9 @@
     grid-area: links;
     display: flex;
     justify-content: flex-end;
-    /* gap: 0.5rem; */
-    /* background-color: red; */
   }
 
   .iconLinks > a:first-child {
-    /* background-color: red; */
     font-size: 1.8rem;
   }
 
@@ -158,7 +143,6 @@
   }
 
   .salutation {
-    /* background-color: yellow; */
     display: flex;
     justify-content: flex-start;
     font-size: 1.5rem;
@@ -166,19 +150,16 @@
 
   .occupation1 {
     grid-area: occupation1;
-    /* background-color: green; */
   }
 
   .occupation2 {
     grid-area: occupation2;
-    /* background-color: blue; */
     display: flex;
     justify-content: flex-end;
   }
 
   .summary {
     grid-area: summary;
-    /* background-color: orange; */
 
     width: 100%;
   }
@@ -195,5 +176,4 @@
   .iconLink:hover {
     transform: translateY(0px);
   }
-
 }

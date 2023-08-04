@@ -1,6 +1,4 @@
-
 :root {
-
   --background-light-gradient: linear-gradient(
     180deg,
     #e2e2e2 0%,
@@ -15,24 +13,15 @@
     #080809 100%
   );
 
-  --title-light-gradient: linear-gradient(
-    180deg,
-    #d81dd0 0%,
-    #7511f4 100%
-  );
+  --title-light-gradient: linear-gradient(180deg, #d81dd0 0%, #7511f4 100%);
 
-  --title-dark-gradient: linear-gradient(
-    180deg,
-    #04B3EA 0%,
-    #9624EF 100%
-  );
+  --title-dark-gradient: linear-gradient(180deg, #04b3ea 0%, #9624ef 100%);
 
   --gray1: #5a5a5a;
   --gray2: #ddd;
-  --gray3: #28252C;
-  --dark-primary-color: #d81dd0;
-  /* --dark-secondary-color: #5A5050; */
+  --gray3: #28252c;
 }
+
 @font-face {
   font-family: Inter;
   src: url(assets/fonts/Inter-Regular.ttf);

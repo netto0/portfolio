@@ -1,16 +1,10 @@
-.background.dark {
-  background: var(--background-dark-gradient);
-}
-
-.background.dark svg,
-.background.dark h1 {
-  background-image: var(--title-dark-gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.background.dark p {
-  color: var(--gray1);
+.background {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 .background.light {
@@ -28,13 +22,19 @@
   color: var(--gray1);
 }
 
-.background {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  overflow-x: hidden;
-  box-sizing: border-box;
+.background.dark {
+  background: var(--background-dark-gradient);
+}
+
+.background.dark svg,
+.background.dark h1 {
+  background-image: var(--title-dark-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.background.dark p {
+  color: var(--gray1);
 }
 
 ::-webkit-scrollbar {
@@ -51,12 +51,4 @@
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--dark-primary-color);
-}
-
-.line {
-  background-color: red;
-  position: absolute;
-  top: 99.9vh;
-  width: 100%;
-  height: 1px;
 }
