@@ -10,6 +10,9 @@ import {
   SiCss3,
   SiReact,
   SiVuedotjs,
+  SiTypescript,
+  SiTailwindcss,
+  SiMongodb
 } from "react-icons/si";
 
 const Projects = React.forwardRef((props, ref) => {
@@ -23,11 +26,14 @@ const Projects = React.forwardRef((props, ref) => {
   const html = <SiHtml5 style={{ fill: "url(#linear-gradient)" }} />;
   const react = <SiReact style={{ fill: "url(#linear-gradient)" }} />;
   const javascript = <SiJavascript style={{ fill: "url(#linear-gradient)" }} />;
+  const typescript = <SiTypescript style={{ fill: "url(#linear-gradient)" }} />;
   const postgresql = <SiPostgresql style={{ fill: "url(#linear-gradient)" }} />;
   const css = <SiCss3 style={{ fill: "url(#linear-gradient)" }} />;
   const vue = <SiVuedotjs style={{ fill: "url(#linear-gradient)" }} />;
+  const tailwind = <SiTailwindcss style={{ fill: "url(#linear-gradient)" }} />;
+  const mongodb = <SiMongodb style={{ fill: "url(#linear-gradient)" }} />;
 
-  const aver4ageStack = [react, javascript, html, css];
+  const aver4ageStack = [react, typescript, mongodb, tailwind];
   const knowledgeStack = [vue, postgresql, html, css];
   const expensesStack = [react, javascript, html, css];
 
