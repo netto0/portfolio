@@ -3,9 +3,8 @@ import React from "react";
 
 import { GlobalStyleContext } from "../providers/globalStyle";
 
-import placeHolderImage from "../assets/images/placeHolderImageGray.png";
-
 import { FaReact, FaHtml5, FaCss3Alt } from "react-icons/fa";
+import { MdOutlineImageNotSupported } from "react-icons/md";
 import { SiJavascript } from "react-icons/si";
 
 export default function Project({
@@ -39,7 +38,9 @@ export default function Project({
       title={soon ? "EM BREVE" : null}
     >
       <h1>{name || defaultName}</h1>
-      <img src={image || placeHolderImage} alt="Image" />
+      <div className={styles.imageBox} style={lightMode ? {backgroundColor: "lightgray", color: "gray"} : {backgroundColor: "#19191a", color: "#0e0e0f"}}>
+        {image ? <img src={image} alt="Image" /> : <MdOutlineImageNotSupported style={{fontSize: "4rem"}}/>}
+      </div>
       <div className={styles.description}>
         <p>{description || defaultDescription}</p>
       </div>
