@@ -1,5 +1,6 @@
 import styles from "./App.module.css";
 import React, { useRef } from "react";
+import { Analytics } from "@vercel/analytics/react";
 import Presentation from "./components/Presentation";
 import Header from "./components/Header";
 import { GlobalStyleContext } from "./providers/globalStyle";
@@ -18,6 +19,7 @@ function App() {
         lightMode ? styles.light : styles.dark
       }`}
     >
+      <Analytics />
       <svg width="0" height="0">
         {lightMode ? (
           <linearGradient
