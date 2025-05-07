@@ -1,10 +1,11 @@
-import React from "react";
+/* eslint-disable react/jsx-no-target-blank */
 import styles from "./Presentation.module.css";
 
 import { BsGithub } from "react-icons/bs";
 import { HiDocumentText } from "react-icons/hi";
 import { FaLinkedinIn, FaCode } from "react-icons/fa";
 
+// eslint-disable-next-line react/prop-types
 export default function Presentation({ executeScroll }) {
   return (
     <main className={styles.presentationContainer}>
