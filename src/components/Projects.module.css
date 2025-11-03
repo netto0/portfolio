@@ -1,11 +1,18 @@
 .container {
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: no-wrap;
+  gap: 2rem;
   justify-content: space-around;
   padding: 1rem;
   margin-bottom: 6rem;
+  overflow-x: auto;
 }
+
+.container::-webkit-scrollbar {
+  height: 5px;
+}
+
 @media screen and (min-width: 640px) and (max-width: 1280px) {
   .container > a:last-child {
     display: none;

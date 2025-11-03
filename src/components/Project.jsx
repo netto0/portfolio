@@ -20,10 +20,10 @@ export default function Project({
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ipsum metus. Sed pretium hendrerit vestibulum. Duis vehicula neque eget massa cursus, id aliquam dolor rhoncus.";
 
   const treatedStack = stack || [
-    <FaReact style={{ fill: "url(#linear-gradient)" }} />,
-    <SiJavascript style={{ fill: "url(#linear-gradient)" }} />,
-    <FaHtml5 style={{ fill: "url(#linear-gradient)" }} />,
-    <FaCss3Alt style={{ fill: "url(#linear-gradient)" }} />,
+    <FaReact style={{ fill: "url(#linear-gradient)" }} key="reactIcon"/>,
+    <SiJavascript style={{ fill: "url(#linear-gradient)" }} key="jsIcon" />,
+    <FaHtml5 style={{ fill: "url(#linear-gradient)" }} key="htmlIcon" />,
+    <FaCss3Alt style={{ fill: "url(#linear-gradient)" }} key="cssIcon" />,
   ];
 
   const { lightMode } = React.useContext(GlobalStyleContext);
@@ -31,7 +31,6 @@ export default function Project({
   return (
     <a
       href={link}
-      target="_blank"
       className={`${styles.project} ${lightMode ? styles.light : styles.dark} ${
         soon && styles.blocked
       }`}

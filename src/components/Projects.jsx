@@ -2,6 +2,7 @@ import styles from "./Projects.module.css";
 import React from "react";
 import aver4ageImg from "../assets/images/aver4age.png";
 import petParadiseImg from "../assets/images/petParadise.png";
+import chronosPomodoroImg from "../assets/images/pomodoroCover.png";
 import Project from "./Project";
 
 import {
@@ -19,11 +20,11 @@ import {
 // eslint-disable-next-line react/display-name
 const Projects = React.forwardRef((props, ref) => {
   const aver4ageDesc =
-    "Projeto pessoal feito com o intuito de facilitar no cálculo de médias e facilitar a visualização geral das notas da Universidade Paulista";
+    "Projeto pessoal criado com o objetivo de automatizar o cálculo de médias e aprimorar a visualização geral das notas na Universidade Paulista.";
   const petParadiseDesc =
-    "Landing page desenvolvida com o objetivo de por em prática conceitos de design e responsividade";
-  const expensesDesc =
-    "Projeto pessoal em andamento que tem como objetivo facilitar no controle e visualização de finanças pessoais, além de auxiliar no planejamento de futuros gastos";
+    "Landing page desenvolvida para um petshop fictício, com foco em um visual acolhedor, cores quentes e destaque para os animais e o atendimento.";
+  const chronosPomodoroDesc =
+    "App de produtividade com técnica Pomodoro, permitindo gerenciar tempo de foco e pausas com interface simples, personalização de ciclos e alertas visuais e sonoros.";
 
   const html = <SiHtml5 style={{ fill: "url(#linear-gradient)" }} />;
   const react = <SiReact style={{ fill: "url(#linear-gradient)" }} />;
@@ -37,16 +38,16 @@ const Projects = React.forwardRef((props, ref) => {
 
   const aver4ageStack = [react, typescript, mongodb, tailwind];
   const petParadiseStack = [react, javascript, html, tailwind];
-  const expensesStack = [react, javascript, html, css];
+  const chronosPomodoroStack = [react, typescript, html, css];
 
   return (
     <section className={styles.container} ref={ref}>
       <Project
-        name="Aver4age"
-        description={aver4ageDesc}
-        stack={aver4ageStack}
-        image={aver4ageImg}
-        link="https://aver4age.vercel.app/"
+        name="Chronos Pomodoro"
+        description={chronosPomodoroDesc}
+        stack={chronosPomodoroStack}
+        image={chronosPomodoroImg}
+        link="https://chronos-pomodoro-private.vercel.app/"
       />
       <Project
         name="Pet Paradise"
@@ -56,10 +57,11 @@ const Projects = React.forwardRef((props, ref) => {
         link="https://pet-paradise-zeta.vercel.app/"
       />
       <Project
-        name="Expen$es"
-        description={expensesDesc}
-        stack={expensesStack}
-        soon={true}
+        name="Aver4age"
+        description={aver4ageDesc}
+        stack={aver4ageStack}
+        image={aver4ageImg}
+        link="https://aver4age.vercel.app/"
       />
     </section>
   );

@@ -5,7 +5,6 @@ import { GlobalStyleContext } from "../providers/globalStyle";
 
 import { HiSun } from "react-icons/hi";
 import { IoMdMoon } from "react-icons/io";
-import { MdLanguage } from "react-icons/md";
 
 export default function Header() {
   const { lightMode, setLightMode } = React.useContext(GlobalStyleContext);
@@ -21,9 +20,6 @@ export default function Header() {
         ) : (
           <HiSun style={{ fill: "url(#linear-gradient)" }} />
         )}
-      </div>
-      <div className={styles.headerButton} title="EM BREVE">
-        <MdLanguage style={{ fill: "url(#linear-gradient)" }} />
       </div>
     </header>
   );
