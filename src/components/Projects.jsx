@@ -11,7 +11,6 @@ import {
   SiHtml5,
   SiCss3,
   SiReact,
-  // SiVuedotjs,
   SiTypescript,
   SiTailwindcss,
   SiMongodb,
