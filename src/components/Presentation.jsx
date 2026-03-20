@@ -52,8 +52,8 @@ export default function Presentation({ executeScroll }) {
         </div>
         <div className={styles.summary}>
           <p>
-            Tenho 25 anos e estou estudando desenvolvimento front-end com foco
-            em React há 3 anos.
+            Tenho 26 anos e estou estudando desenvolvimento front-end com foco
+            em React há 4 anos.
           </p>
         </div>
       </div>
